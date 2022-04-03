@@ -44,7 +44,6 @@ nav a.active,
 nav a:hover {
     background-color: #2b83ea;
 }
-
 /* Hero Panel */
 #hero {
     background-color: #e4e4e5;
@@ -59,4 +58,26 @@ nav a:hover {
     margin-bottom: 20px;
     font-size: 18px;
     line-height: 25px;
+}
+/* main content */
+#wrapper {
+    margin: 0;
+    }
+#main {
+    float: left;
+    width: 640px;
+    padding: 20px;
+    }
+/* sidebar area */
+#sidebar {
+    float: left;
+    width: 260px;
+    padding: 20px;
+}
+/* footer */
+footer {
+    clear:both;
+    background-color:#1d1d1d;
+    padding:20px;
+    color:#eee;
 }

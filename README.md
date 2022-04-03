@@ -259,3 +259,27 @@ line-height: 25px;
 ![hasil](foto/8.png)
 <p aalign="center">Gambar 4.10 tampilan hero Panel.
 
+## Mengatur Layout Main dan Sidebar
+
+Selanjutnya mengatur main content dan sidebar, tambahkan CSS float.
+```css
+/* main content */
+#wrapper {
+margin: 0;
+}
+#main {
+float: left;
+width: 640px;
+padding: 20px;
+}
+/* sidebar area */
+#sidebar {
+float: left;
+width: 260px;
+padding: 20px;
+}
+```
+
+## Membuat Sidebar Widget
+
+Kemudian selanjutnya menambahkan element lain dalam sidebar.
