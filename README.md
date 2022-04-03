@@ -194,3 +194,34 @@ header h1 {
 }
 ```
 Kemudian lihat hasilnya pada browser.
+
+![hasil](foto/5.png)
+<p align="center">Gambar 4.8 Tampilan Header Layout.
+
+## Membuat Navigasi
+
+Kemudian selanjutnya mengatur navigasi.
+```css
+/* navigasi */
+nav {
+    display: block;
+    background-color: #1f5faa;
+}
+nav a {
+    padding: 15px 30px;
+    display: inline-block;
+    color: #ffffff;
+    font-size: 14px;
+    text-decoration: none;
+    font-weight: bold;
+}
+nav a.active,
+nav a:hover {
+    background-color: #2b83ea;
+}
+```
+Kemudian lihat hasilnya.
+
+![hasil](foto/6.png)
+<p align="center">Gambar 4.9 Tampilan Navigasi.
+
