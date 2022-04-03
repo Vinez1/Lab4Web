@@ -1,1 +1,8 @@
 /* input css section */
+<style>
+    .div4 {
+        background-color: blue;
+        clear: left;
+        float: none;
+    }
+</style>
