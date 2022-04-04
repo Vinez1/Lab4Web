@@ -257,7 +257,7 @@ line-height: 25px;
 }
 ```
 ![hasil](foto/8.png)
-<p aalign="center">Gambar 4.10 tampilan hero Panel.
+<p align="center">Gambar 4.10 tampilan hero Panel.
 
 ## Mengatur Layout Main dan Sidebar
 
@@ -283,3 +283,153 @@ padding: 20px;
 ## Membuat Sidebar Widget
 
 Kemudian selanjutnya menambahkan element lain dalam sidebar.
+```html
+<aside id="sidebar">
+    <div class="widget-box">
+        <h3 class="title">Widget Header</h3>
+        <ul>
+            <li><a href="#">Widget Link</a></li>
+            <li><a href="#">Widget Link</a></li>
+            <li><a href="#">Widget Link</a></li>
+            <li><a href="#">Widget Link</a></li>
+            <li><a href="#">Widget Link</a></li>
+        </ul>
+        </div>
+        <div class="widget-box">
+            <h3 class="title">Widget Text</h3>
+            <p>Vestibulum lorem elit, iaculis in nisl volutpat, malesuada tincidunt
+            arcu. Proin in leo fringilla, vestibulum mi porta, faucibus felis. Integer
+            pharetra est nunc, nec pretium nunc pretium ac.</p>
+</div>
+</aside>
+```
+kemudian tambahkan CSS.
+```css
+/* widget */
+.widget-box {
+    border:1px solid #eee;
+    margin-bottom:20px;
+}
+.widget-box .title {
+    padding:10px 16px;
+    background-color:#428bca;
+    color:#fff;
+}
+.widget-box ul {
+    list-style-type:none;
+}
+.widget-box li {
+    border-bottom:1px solid #eee;
+}
+.widget-box li a {
+    padding:10px 16px;
+    color:#333;
+    display:block;
+    text-decoration:none;
+}
+.widget-box li:hover a {
+    background-color:#eee;
+}
+.widget-box p {
+    padding:15px;
+    line-height:25px;
+}
+```
+dan hasil pada browsernya seperti ini.
+
+![hasil](foto/9.png)
+<p align="center">Gambar 4.11 Tampilan Sidebar Widget.
+
+## Mengatur Footer
+
+Selanjutnya mengatur tampilan footer. Tambahkan CSS untuk footer.
+```css
+/* footer */
+footer {
+clear:both;
+background-color:#1d1d1d;
+padding:20px;
+color:#eee;
+}
+```
+hasilnya adalah
+
+![hasil](foto/10.png)
+<p align="center">Gambar 4.12 Tampilan Footer.
+
+## Menambahkan Elemen lainnya pada Main Content
+
+```css
+<section id="main">
+    <div class="row">
+        <div class="box">
+            <img src="https://dummyimage.com/120/db7d25/fff.png" alt=""class="image-circle">
+            <h3>Heading</h3>
+            <p>Donec sed odio dui. Etiam porta sem malesuada magna molliseuismod.</p>
+            <a href="#" class="btn btn-default">View detail</a>
+        </div>
+        <div class="box">
+            <img src="https://dummyimage.com/120/3e73e6/fff.png" alt=""class="image-circle">
+            <h3>Heading</h3>
+            <p>Donec sed odio dui. Etiam porta sem malesuada magna molliseuismod.</p>
+            <a href="#" class="btn btn-default">View detail</a>
+        </div>
+        <div class="box">
+            <img src="https://dummyimage.com/120/71e6d4/fff.png" alt=""class="image-circle">
+            <h3>Heading</h3>
+            <p>Donec sed odio dui. Etiam porta sem malesuada magna molliseuismod.</p>
+            <a href="#" class="btn btn-default">View detail</a>
+        </div>
+    </div>
+</section>
+```
+
+Kemudian tambahkan CSS.
+
+```css
+/* box */
+.box {
+    display:block;
+    float:left;
+    width:33.333333%;
+    box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    -webkit-box-sizing:border-box;
+    padding:0 10px;
+    text-align:center;
+}
+.box h3 {
+    margin: 15px 0;
+}
+.box p {
+    line-height: 20px;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+box img {
+    border: 0;
+    vertical-align: middle;
+}
+.image-circle {
+    border-radius: 50%;
+}
+.row {
+    margin: 0 -10px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+.row:after, .row:before,
+.entry:after, .entry:before {
+    content:'';
+    display:table;
+}
+.row:after,
+.entry:after {
+    clear:both;
+}
+```
+
+Lihat hasilnya di browser.
+
+![hasil](foto/11.png)
