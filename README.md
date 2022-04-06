@@ -492,3 +492,38 @@ refresh pada browser dan hasilnya seperti ini.
 ![hasil](foto/12.png)
 <p align="center">Gambar 4.14 Tampilan Artikel.
 
+## Pertanyaan dan Tugas
+
+<br>
+
+### 1. Tambahkan Layout untuk menu About
+
+=> buat single layout yang berisi deskripsi, portfolio, dll
+
+### Tambahkan layout untuk menu Contact
+
+=> yang berisi form isian: nama, email, message, dll
+
+<br>
+
+## Jawaban
+
+### 1. membuat About
+
+- _HTML_
+
+```html
+<div class="about">
+    <div class="section-title">
+        <h1>About me</h1>
+        <br>
+        <p>Nama saya Fery Affandi. Saya kuliah di Universitas Pelita Bangsa 
+        yang terletak di Cikarang,Bekasi.
+        Jurusan saya adalah Teknik Informatika dengan NIM 312010018.
+        </p>
+    </div>
+    <div>
+        <img class="avatar" src="asset/img/profile_img.jpg">
+    </div>
+</div>
+```
