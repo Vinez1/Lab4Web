@@ -174,3 +174,21 @@ box img {
 .entry .right-img {
     float: right;
 }
+/*layout About*/
+.about {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #c0bdbd;
+    clear: both;
+    padding: 35px;
+    line-height: 25px;
+  }
+  .avatar {
+    width: 110px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+  }

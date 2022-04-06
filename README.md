@@ -527,3 +527,96 @@ refresh pada browser dan hasilnya seperti ini.
     </div>
 </div>
 ```
+
+- _CSS_
+
+```css
+/*layout About*/
+.about {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #c0bdbd;
+  clear: both;
+  padding: 35px;
+  line-height: 25px;
+}
+.avatar {
+  width: 110px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+```
+
+dan hasil  di webnya adalah
+
+![hasil](foto/14.png)
+<p align="center">Gambar 4.15
+
+### 2. Buat HTML seperti ini.
+
+- _HTML_
+
+```html
+<div class="kontak-body">
+  <h1>Contact</h1>
+  <form class="kontak-form-class">
+    <div class="form-form-group">
+      <label for="name" class="kontak-label">Your Name</label>
+      <input
+        type="text"
+        id="name"
+        name="name"
+        class="kontak-form-control"
+        required
+      />
+    </div>
+    <div class="kontak-form-group">
+      <label for="name" class="kontak-label">Your Email</label>
+      <div class="kontak-input-group">
+        <input
+          type="email"
+          id="email"
+          name="name"
+          class="kontak-form-control"
+          required
+        />
+      </div>
+    </div>
+  </form>
+  <div class="kontak-form-group">
+    <label for="name" class="kontak-label">Subject</label>
+    <input
+      type="text"
+      id="name"
+      name="name"
+      class="kontak-form-control"
+      required
+    />
+  </div>
+  <div class="kontak-form-group">
+    <label for="name" class="kontak-label">Message</label>
+    <div class="kontak-input-group">
+      <textarea
+        id="message"
+        name="message"
+        class="kontak-form-control"
+        rows="6"
+        maxlength="3000"
+        required
+      ></textarea>
+    </div>
+  </div>
+  <div class="kontak-form-group">
+    <div class="loading">Loading</div>
+    <div class="error-message"></div>
+    <div class="sent-message">Your message has been sent. Thank you!</div>
+  </div>
+  <div class="text-center">
+    <button type="submit">Send Message</button>
+  </div>
+</div>
+```
